@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "Wordle Helper",
     images: [
       {
-        url: "/og-image.png",
+        url: "/favicon/og-image.png",
         width: 1200,
         height: 630,
         alt: "Wordle Helper - Solve Wordle Puzzles with Smart Word Filtering",
@@ -94,20 +94,20 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon/favicon.ico", sizes: "any" },
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    apple: [{ url: "/favicon/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
     other: [
       {
         rel: "mask-icon",
-        url: "/safari-pinned-tab.svg",
+        url: "/favicon/safari-pinned-tab.svg",
         color: "#5bbad5",
       },
     ],
   },
-  manifest: "/site.webmanifest",
+  manifest: "/favicon/site.webmanifest",
   appleWebApp: {
     title: "Wordle Helper",
     statusBarStyle: "default",
@@ -118,7 +118,7 @@ export const metadata: Metadata = {
     "apple-mobile-web-app-capable": "yes",
     "application-name": "Wordle Helper",
     "msapplication-TileColor": "#ffffff",
-    "msapplication-config": "/browserconfig.xml",
+    "msapplication-config": "/favicon/browserconfig.xml",
   },
 };
 
