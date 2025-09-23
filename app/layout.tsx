@@ -141,12 +141,12 @@ export default function RootLayout({
           gtag("config", "G-H4SZY3FKB7");
         `}
       </Script>
-      <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <link rel="shortcut icon" href="/favicon.svg" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      <meta name="apple-mobile-web-app-title" content="Luke Orriss" />
-      <link rel="manifest" href="/site.webmanifest" />
+      <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+      <link rel="shortcut icon" href="/favicon/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+      <meta name="apple-mobile-web-app-title" content="ldo.dev" />
+      <link rel="manifest" href="/favicon/site.webmanifest" />
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
         <Analytics />
