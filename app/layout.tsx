@@ -82,16 +82,7 @@ export const metadata: Metadata = {
   category: "games",
   classification: "Word Game Helper Tool",
   referrer: "origin-when-cross-origin",
-  colorScheme: "light",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-  ],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
+
   icons: {
     icon: [
       { url: "/favicon/favicon.ico", sizes: "any" },

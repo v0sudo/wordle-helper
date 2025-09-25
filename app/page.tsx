@@ -7,6 +7,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Loader2, Trash } from "lucide-react";
 import { FALLBACK_WORDS } from "@/lib/wordlist";
+import Link from "next/link";
+import Image from "next/image";
 
 type LetterState = "correct" | "present" | "absent" | "unknown";
 
@@ -329,6 +331,12 @@ export default function WordleHelper() {
             )}
           </CardContent>
         </Card>
+      </div>
+      {/* Advertising */}
+      <div className="flex justify-center mt-6 ">
+        <Link href="https://billoinvoicing.com?ref=wordle" target="_blank">
+          <Image src="https://8yapdxq12w.ufs.sh/f/49awn2gt6CrDHhmSNePDk49QcmXUrROjMS3Zqip0KA5ef2th" alt="Billo Invoicing" width="500" height="50" className="rounded-lg" />
+        </Link>
       </div>
     </div>
   );

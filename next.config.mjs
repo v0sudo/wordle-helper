@@ -8,7 +8,21 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "*.utfs.io",
+      },
+      {
+        protocol: "https",
+        hostname: "*.ufs.sh",
+      },
+      {
+        protocol: "https",
+        hostname: "*.clerk.com",
+      },
+    ],
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
