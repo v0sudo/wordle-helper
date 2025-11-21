@@ -357,7 +357,7 @@ export default function WordleHelper() {
 
   // Suggest the best word to try
   const suggestBestWord = (): string | null => {
-    if (possibleWords.length === 0) return null;
+    if (possibleWords.length === 0) return "Not enough words to suggest";
 
     // If we have very few words left, just return the first one
     if (possibleWords.length <= 3) {
@@ -476,7 +476,20 @@ export default function WordleHelper() {
                 </Button>
               </div>
               {guesses.length >= 6 && <p className="text-sm text-muted-foreground">Maximum 6 guesses reached</p>}
-              {suggestedWord && guesses.length < 6 && (
+              {guesses.length < 6 && suggestedWord && suggestedWord === "Not enough words to suggest" ? (
+                <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/5 border border-primary/20">
+                  <Lightbulb className="h-4 w-4 text-primary flex-shrink-0" />
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground">Suggested word:</p>
+                    <p className="text-xs text-muted-foreground">
+                      <span className="font-semibold text-primary">{suggestedWord}</span>
+                    </p>
+                  </div>
+                  {/* <Button size="sm" variant="outline" onClick={() => addGuess(suggestedWord?.toLowerCase())} className="flex-shrink-0">
+                    Use
+                  </Button> */}
+                </div>
+              ) : (
                 <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/5 border border-primary/20">
                   <Lightbulb className="h-4 w-4 text-primary flex-shrink-0" />
                   <div className="flex-1">
@@ -485,7 +498,7 @@ export default function WordleHelper() {
                       Try <span className="font-semibold text-primary">{suggestedWord}</span> to maximize information gain
                     </p>
                   </div>
-                  <Button size="sm" variant="outline" onClick={() => addGuess(suggestedWord.toLowerCase())} className="flex-shrink-0">
+                  <Button size="sm" variant="outline" onClick={() => addGuess(suggestedWord?.toLowerCase())} className="flex-shrink-0">
                     Use
                   </Button>
                 </div>
