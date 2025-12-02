@@ -21,6 +21,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "*.clerk.com",
       },
+      {
+        protocol: "https",
+        hostname: "*.ldo.dev",
+      },
     ],
   },
 };
