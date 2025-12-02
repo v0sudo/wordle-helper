@@ -573,8 +573,8 @@ export default function WordleHelper() {
 
           {/* Advertising */}
           <div className="flex justify-center pt-4">
-            <Link href="https://billoinvoicing.com?ref=wordle" target="_blank">
-              <Image src="https://8yapdxq12w.ufs.sh/f/49awn2gt6CrDHhmSNePDk49QcmXUrROjMS3Zqip0KA5ef2th" alt="Billo Invoicing" width="500" height="50" className="rounded-lg" />
+            <Link href="https://flow.acertine.com?ref=wordle" target="_blank">
+              <Image src="https://ldo.dev/_static/acertine-promo.png" alt="Acertine Flow" width="500" height="50" className="rounded-lg" />
             </Link>
           </div>
         </div>
