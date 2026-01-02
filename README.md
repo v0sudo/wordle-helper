@@ -12,7 +12,7 @@ An interactive helper for narrowing down Wordle answers. Enter guesses and toggl
 
 ## Run Remotely
 
-1. Visit [https://wordle.orriss.dev](https://wordle.orriss.dev)
+1. Visit [https://wordle.ldo.dev](https://wordle.ldo.dev)
 
 ## Run Locally
 
